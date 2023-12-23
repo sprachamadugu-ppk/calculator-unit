@@ -52,12 +52,18 @@ const Calculator: React.FC = () => {
 
   return (
     <Grid container spacing={2} justifyContent="center" alignItems="center">
-      <Grid item xs={12}>
-        <Typography variant="h4" align="center" gutterBottom>
+      <Grid item xs={11}>
+        <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          style={{ backgroundColor: "aqua" ,marginLeft:"19%",width:"60%"}}
+        >
           Calculator
         </Typography>
+        <br />
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={2}>
         <TextField
           label="Number 1"
           variant="outlined"
@@ -67,7 +73,7 @@ const Calculator: React.FC = () => {
           onChange={(e) => handleNumChange(e, "num1")}
         />
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={2}>
         <TextField
           label="Number 2"
           variant="outlined"
@@ -80,7 +86,7 @@ const Calculator: React.FC = () => {
       <Grid item xs={12} container spacing={2} justifyContent="center">
         <Grid item>
           <Button
-            color="secondary"
+            color="primary"
             variant="contained"
             onClick={() => handleOperation("+")}
           >
@@ -89,7 +95,7 @@ const Calculator: React.FC = () => {
         </Grid>
         <Grid item>
           <Button
-            color="secondary"
+            color="primary"
             variant="contained"
             onClick={() => handleOperation("-")}
           >
@@ -98,7 +104,7 @@ const Calculator: React.FC = () => {
         </Grid>
         <Grid item>
           <Button
-            color="secondary"
+            color="primary"
             variant="contained"
             onClick={() => handleOperation("*")}
           >
@@ -107,7 +113,7 @@ const Calculator: React.FC = () => {
         </Grid>
         <Grid item>
           <Button
-            color="secondary"
+            color="primary"
             variant="contained"
             onClick={() => handleOperation("/")}
           >
@@ -116,7 +122,7 @@ const Calculator: React.FC = () => {
         </Grid>
       </Grid>
       {result !== "" && (
-        <Grid item xs={12}>
+        <Grid item xs={5} md={5}>
           <Typography
             variant="h6"
             align="center"
