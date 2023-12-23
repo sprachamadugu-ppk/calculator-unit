@@ -57,7 +57,7 @@ const Calculator: React.FC = () => {
           variant="h4"
           align="center"
           gutterBottom
-          style={{ backgroundColor: "aqua" }}
+          style={{ backgroundColor: "aqua" ,marginLeft:"19%",width:"60%"}}
         >
           Calculator
         </Typography>
