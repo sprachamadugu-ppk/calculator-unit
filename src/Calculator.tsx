@@ -51,10 +51,14 @@ const Calculator: React.FC = () => {
   };
 
   return (
-    // <div style={{height:700,width:700,marginTop:200}}>
     <Grid container spacing={2} justifyContent="center" alignItems="center">
       <Grid item xs={11}>
-        <Typography variant="h4" align="center" gutterBottom style={{ backgroundColor: "aqua" }}>
+        <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          style={{ backgroundColor: "aqua" }}
+        >
           Calculator
         </Typography>
         <br />
@@ -129,7 +133,6 @@ const Calculator: React.FC = () => {
         </Grid>
       )}
     </Grid>
-    // </div>
   );
 };
 
